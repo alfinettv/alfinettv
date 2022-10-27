@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--code.candilkuya.com-->
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Digital Clock using Javascript</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<p id="clock"></p>
+	<script>
+	   setInterval(customClock, 500);
+	   function customClock() {
+	       var time = new Date();
+	       var hrs = time.getHours();
+	       var min = time.getMinutes();
+	       var sec = time.getSeconds();
+	       
+	       document.getElementById('clock').innerHTML = hrs + ":" + min + ":" + sec;
+	       
+	   }
+	   
+	</script>
+</body>
+</html>
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+body {
+	background: #000;
+	display: grid;
+	place-items: center;
+	height: 100vh;
+}
+#clock {
+	font-size: 250px;
+	background: -webkit-linear-gradient(#2b32b2, #1488cc);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 500;
+}
+
+
+
+
+
+notification icon
